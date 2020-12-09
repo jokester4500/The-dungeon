@@ -20,7 +20,5 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: npm i
     - run: node activity2.js
-      env:
-          NAME: ${{NAME_SECRET}}
-          AGE:  ${{AGE_SECRET}}
-          YEAR: "0"
+
+  
