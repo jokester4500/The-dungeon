@@ -16,9 +16,7 @@ jobs:
         NAME: ${{ secrets.NAME_SECRET }}
         AGE: ${{ secrets.AGE_SECRET }}
         YEAR: "0"
-
-      name: test it
-    - name: echo "Working hopefully"
+    - run: echo "Working hopefully"
 
 
 
