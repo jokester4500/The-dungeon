@@ -1,16 +1,26 @@
-name: Activity 2 workflow
-on: push
+name: Activity2 Github Action
+
+on:
+  push:
 
 jobs:
-  build: 
-    name: Starts read secrets
-    runs on: ubuntu-latest
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [10.x, 12.x, 14.x]
+
     steps:
-      - uses: actions/checkout@v1
-      - uses: ./actions/
-      - run: npm i
-      - run: node activity2.js
-        env:
+    - uses: actions/checkout@v2
+    - name: Use activity2.js ${{ matrix.node-version }}
+      uses: ./actions
+      with:
+        node-version: ${{ matrix.node-version }}
+    - run: npm i
+    - run: node activity2.js
+      env:
           NAME: ${{NAME_SECRET}}
           AGE:  ${{AGE_SECRET}}
           YEAR: "0"
