@@ -16,6 +16,7 @@ jobs:
         NAME: ${{ secrets.NAME_SECRET }}
         AGE: ${{ secrets.AGE_SECRET }}
         YEAR: "0"
+    - run: npm install    
     - run: echo "Working hopefully"
 
 
