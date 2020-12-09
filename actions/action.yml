@@ -2,15 +2,22 @@ name: "Read Secrets"
 description: "Reads the Secret keys from github secrets"
 author: "Kahlil Herring"
 
+name: 'Hello World'
+description: 'Greet someone and record the time'
 inputs:
-  NAME:
-    description: "name of user"
+  NAME:  # id of input
+    description: 'Name of user'
     required: true
-  AGE:
-    description: "age of user"
+  AGE:  # id of input
+    description: 'Age of user'
     required: true
   YEAR:
-    description: "year until age of user"
+    description: 'Year unitl users age'
     required: true
+outputs:
+  time: # id of output
+    description: 'The time we greeted you'
+runs:
+  using: 'node12'
+  main: 'activity2.js'
 
-    run: echo Hello ${{inputs.NAME}}
