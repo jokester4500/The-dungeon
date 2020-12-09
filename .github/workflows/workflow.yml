@@ -10,15 +10,18 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [10.x, 12.x, 14.x]
+        node-version: [12.x]
 
     steps:
     - uses: actions/checkout@v2
-    - name: Use activity2.js ${{ matrix.node-version }}
       uses: ./actions
       with:
         node-version: ${{ matrix.node-version }}
-    - run: npm i
+        env:
+          NAME: ${{ secrets.NAME_SECRET }}
+          AGE: ${{ secrets.AGE_SECRET}}
+          YEAR: "0"
+    - run: npm install
     - run: node activity2.js
 
   
