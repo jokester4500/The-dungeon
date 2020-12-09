@@ -1,0 +1,14 @@
+name: "Read Secrets"
+description: "Reads the Secret keys from github secrets"
+author: "Kahlil Herring"
+
+inputs:
+  NAME:
+    description: "name of user"
+    required: true
+  AGE:
+    description: "age of user"
+    required: true
+  YEAR:
+    description: "year until age of user"
+    required: true
