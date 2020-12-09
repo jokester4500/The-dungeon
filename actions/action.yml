@@ -2,8 +2,8 @@ name: "Read Secrets"
 description: "Reads the Secret keys from github secrets"
 author: "Kahlil Herring"
 
-name: 'Hello World'
-description: 'Greet someone and record the time'
+name: 'activity2 Action'
+description: 'just run bro'
 inputs:
   NAME:  # id of input
     description: 'Name of user'
