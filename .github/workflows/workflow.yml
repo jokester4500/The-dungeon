@@ -9,7 +9,6 @@ jobs:
     name: Starts Activity2 action
     
     steps:
-      name: Actions step
     - uses: actions/checkout@v1
     - uses: ./actions
       with:
