@@ -2,8 +2,6 @@ name: "Read Secrets"
 description: "Reads the Secret keys from github secrets"
 author: "Kahlil Herring"
 
-name: 'activity2 Action'
-description: 'just run bro'
 inputs:
   NAME:  # id of input
     description: 'Name of user'
@@ -21,3 +19,4 @@ runs:
   using: 'node12'
   main: 'activity2.js'
 
+ 
