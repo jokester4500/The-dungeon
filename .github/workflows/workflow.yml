@@ -7,22 +7,15 @@ jobs:
   build:
     name: Starts Activity2 action
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [12.x]
-
     steps:
     - uses: actions/checkout@v1
     - uses: ./actions
+      with:
       env:
         NAME: ${{ secrets.NAME_SECRET }}
         AGE: ${{ secrets.AGE_SECRET }}
         YEAR: "0"
-      with:
-        node-version: ${{ matrix.node-version }}
   
-    - run: npm install
-    - run: node activity2.js
+    - run: echo your age ${{ AGE }}
 
   

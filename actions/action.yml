@@ -13,6 +13,4 @@ inputs:
     description: "year until age of user"
     required: true
 
-    runs:
-      using: "node12"
-      main: "./activity2.js"
+    run: echo Hello ${{inputs.NAME}}
