@@ -14,5 +14,4 @@ inputs:
     required: true
 
     runs:
-      using: "node"
-      
+      using: "node12"
