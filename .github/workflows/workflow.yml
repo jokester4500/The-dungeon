@@ -11,12 +11,12 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - uses: ./actions
+    - run: npm install  
       with:
         node-version: 12
         NAME: ${{ secrets.NAME_SECRET }}
         AGE: ${{ secrets.AGE_SECRET }}
-        YEAR: "0"
-    - run: npm install    
+        YEAR: "0"  
     - run: echo "Working hopefully"
 
 
