@@ -16,6 +16,6 @@ jobs:
         AGE: ${{ secrets.AGE_SECRET }}
         YEAR: "0"
   
-    - run: echo your age ${{ AGE }}
+    - run: echo your age ${{ secrets.AGE_SECRET  }}
 
   
