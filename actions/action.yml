@@ -17,6 +17,6 @@ outputs:
     description: 'The time we greeted you'
 runs:
   using: 'node12'
-  main: 'activity2.js'
+  main: './activity2.js'
 
  
