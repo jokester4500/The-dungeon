@@ -1,8 +1,7 @@
 name: Activity2 Github Action
 
 on:
-  label:
-    types: [AGE]
+  push:
 
 jobs:
   build:

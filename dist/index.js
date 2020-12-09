@@ -9,7 +9,6 @@ const core = __webpack_require__(429);
 const github = __webpack_require__(790);
 
 console.log("Hello " + core.getInput("NAME") + " in " + core.getInput("YEAR") + " years, you will be " + core.getInput("AGE") + " ! Won't you feel old?");
-console.log("Hello");
 
 /***/ }),
 
